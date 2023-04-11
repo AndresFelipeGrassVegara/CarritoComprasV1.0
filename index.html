@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.png" id="logo" width="160">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2 style="color:rgb(5, 65, 5)">Productos 100% Naturales</h2>
+                                <p style="color:rgb(5, 65, 5)">Envio gratis para compras superiores a $100.000</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que deseas comprar?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p >Productos de origen natural</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Variedad de productos </p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Ventas al por mayor</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Productos disponibles</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Arcilla-blanca.jpg" class="imagen-curso u-full-width" >
+                    <div class="info-card">
+                        <h4>ARCILLA BLANCA</h4>
+                        <p>Combate el acné progresivamente, elimina el exceso de grasa, elimina puntos negros y espinillas, produce un efecto relajante, aportando elasticidad. Tiene efecto détox y purificante. 
+                            </p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$15.000  <span class="u-pull-right ">$12.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Arcilla-verde.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>ARCILLA VERDE</h4>
+                            <p>Combate el acné progresivamente, elimina el exceso de grasa, elimina puntos negros y espinillas, produce un efecto relajante, aportando elasticidad. Tiene efecto détox y purificante. 
+                               </p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$15.000  <span class="u-pull-right ">$12.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Lips-Balm.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>LIP BALM</h4>
+                            <p>Este balsamo esta elaborado a base de productos naturales, tales como: Aceite de coco, aceites esenciales y vitamina E. Los cuales ayudan a restaurar e hidratar los labios. Disponible en presentación de 20gr.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Sales2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>BODY SCRUB</h4>
+                        <p>Sales de baño terapéuticas, enriquecidas con las propiedades del romero y la lavanda</p>
+                        <p>Beneficios:
+                            Exfolia tu piel dejándola suave y luminosa.
+                            Relaja tus músculos brindado una sensación de descanso.
+                            Ideal para aromaterapia/antiestrés.
+                            </p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$18.000  <span class="u-pull-right ">$15.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Jabon-rosas.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>JABÓN DE AGUA DE ROSAS Y COLÁGENO</h4>
+                            <p>Propiedades</p>
+                            <P> Hidrata, nutre y mejora el aspecto de la piel grasa por sus propiedades antisépticas y antibacterianas.
+                                Nivela la producción de colágeno.
+                                Reduce estrías y arrugas
+                                Disminuye las irritaciones de la piel.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$12.000  <span class="u-pull-right ">$10.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Jabon-Avena.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>JABÓN DE AVENA Y MIEL</h4>
+                            <p>Propiedades:</p>
+                            <P>Ejerce un efecto limpiador sobre la piel, dejándola suave, hidratada y nutrida. Ayuda a calmar las irritaciones de la piel, adicional los lípidos de la avena ejercen un efecto limpiador que mantiene la hidratación y la suavidad de la piel.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$12.000   <span class="u-pull-right ">$10.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Jabon-Calendula.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>JABÓN DE CALENDULA</h4>
+                        <p>Propiedades:</p>
+                        <p>El jabón de caléndula calma las irritaciones cutáneas, trata el acné, las picaduras y las quemaduras. Suaviza y alivia la piel seca y agrietada. Posee propiedades antinflamatorias y antisépticas.</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$12.000  <span class="u-pull-right ">$10.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Jabon-Chocolate.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>JABÓN DE CHOCOLATE</h4>
+                            <p>Propiedades:</p>
+                            <p>Hidrata y nutre la piel.
+                                Contiene antioxidantes que disminuyen el envejecimiento de la piel.
+                                Facilita el drenaje de la piel
+                                Disminuye la flacidez aportando elasticidad.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$12.000  <span class="u-pull-right ">$10.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/Jabon-Carbon.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>JABÓN DE CARBÓN ACTIVADO Y ARBOL DE TÉ</h4>
+                            <p>Propiedades:</p>
+                            <p>Detoxificante 
+                                Elimina las impurezas
+                                Elimina el exceso de grasa
+                                Antiséptico y antibacteriano
+                                Reduce la apariencia de puntos 
+                                       negros y espinillas.
+                                ️Brinda sensación de frescura 
+                                       y suavidad en la piel.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$12.000  <span class="u-pull-right ">$10.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/Jabon-Curcuma.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>JABÓN DE ARROZ, CÚRCUMA, LECHE Y AVENA</h4>
+                            <p>Propiedades</p>
+                            <p>Ideal para pieles con acné o con manchas localizadas por sus propiedades aclarantes, astringentes, seborreguladoras. 
+
+                                Es un hidratante y regenerador natural.</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$12.000  <span class="u-pull-right ">$10.000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/Jabon-Aloe Vera.jpg" width="292">
+                            <div class="info-card">
+                                <h4>JABÓN DE ALOE VERA</h4>
+                                <p>Propiedades</p>
+                                <p>Regeneración de tejidos.
+                                    Absorción del exceso de grasa.
+                                    Restauración del colágeno.
+                                    Reducción de cicatrices.
+                                    Disminución de inflamaciones.
+                                    Efecto revitalizador
+                                    Limpieza y eliminación de toxinas.
+                                    Frescura.</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$12.000  <span class="u-pull-right ">$10.000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/Aceite-Coco.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>ACEITE DE COCO</h4>
+                                <p>PRENSADO EN FRIO</p>
+                                <p>Perfecto para revitalizar tu piel y el cabello maltratado, funciona como bronceador natural y ayuda a hidratar zonas corporales con resequedad.</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$15.000  <span class="u-pull-right ">$12.000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">biomind@gmail.com</a>
+                                <a class="enlace" href="#">Aplicaciones Móviles</a>
+                                <a class="enlace" href="#">Soporte Técnico</a>
+                                <a class="enlace" href="#">Temas</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
